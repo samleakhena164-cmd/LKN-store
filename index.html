@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKN Store</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LKN <span>Store</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1>LKN Store</h1>
+        <p>Explore our latest collection of premium products carefully selected for quality,style and you.</p>
+        <a href="#products" class="btn"><i class="fas fa-shopping-cart"></i> Explore Products</a>
+    </section>
+    <section id="products" class="section">
+        <h2 class="section-title"><i class="fas fa-boxes" style="margin-right: 10px;"></i> Products</h2>
+        <div class="product-grid" id="productGrid">
+        </div>
+
+</div>
+    </section>
+    <section id="about" class="section">
+        <h2 class="section-title"><i class="fas fa-info-circle"></i> About LKN</h2>
+        <div class="about-content">
+            <p><i class="fas fa-check-circle"></i> Clean, modern, user-friendly design that create better shopping expiernces and boots your sales.</p>
+            <p><i class="fas fa-check-circle"></i> We curate only the best quality products from top brands.</p>
+            <p><i class="fas fa-check-circle"></i> Our team is passionate about gaming, content creation, and cutting-edge tech.</p>
+            <p style="margin-top: 0.8rem;"><i class="fas fa-map-pin"></i> Based in Phnom Penh — shipping nationwide.</p>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><i class="fas fa-store"></i> LKN Store</p>
+                <p><i class="fas fa-phone-alt"></i> +855 12 345 678</p>
+                <p><i class="fas fa-envelope"></i> support@lknstore.com</p>
+                <p><i class="fab fa-telegram"></i> @lknstorebot</p>
+                <p style="margin-top: 1rem; background: #eef2f7; padding: 0.6rem 1rem; border-radius: 40px; display: inline-block;">
+                    <i class="fas fa-bolt" style="color: #f7c948;"></i> Order notification  Telegram
+                </p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email address" required>
+                <textarea placeholder="Message..."></textarea>
+                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-box">
+            <h2><i class="fas fa-shopping-bag"></i> Place Order</h2>
+            <p class="sub" id="modalProductName">Product: —</p>
+            <form id="orderForm">
+                <label for="customerName">Full name</label>
+                <input type="text" id="customerName" placeholder="e.g. Sam Leakhena" required>
+
+                <label for="customerPhone">Phone number</label>
+                <input type="tel" id="customerPhone" placeholder="+855 12 345 678" required>
+
+                <label for="customerAddress">Delivery address</label>
+                <input type="text" id="customerAddress" placeholder="Street, city" required>
+
+                <label for="qtySelect">Quantity</label>
+                <select id="qtySelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <div class="btn-row">
+                    <button type="submit" class="btn-submit"><i class="fab fa-telegram"></i> Order &amp; notify</button>
+                    <button type="button" class="btn-cancel" id="closeModalBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="logo">LKN <span>Store</span></div>
+            <p>Your one-stop shop for all things tech!</p>
+        </div>
+
+        
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Returns</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Warranty</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+85512345678"><i class="fas fa-phone-alt"></i> +855 12 345 678</a></li>
+                    <li><a href="mailto:support@lknstore.com"><i class="fas fa-envelope"></i> support@lknstore.com</a></li>
+                    <li><a href="https://t.me/lknstorebot" target="_blank"><i class="fab fa-telegram"></i> @lknstorebot</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer-bottom">
+        <span>&copy; 2026 LKN Store. All rights reserved.</span>
+        <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/lknstorebot" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
